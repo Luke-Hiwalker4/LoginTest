@@ -24,6 +24,8 @@ var password = parts[1];
 
 if(password != enteredpw)
 {
+alert(password);
+alert(enteredpw);
 alert("Wrong password.");
 }
 
