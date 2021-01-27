@@ -6,7 +6,7 @@ alert(parts[0]);
 alert(parts[1]);
 alert(parts[2]);
 
-if(parts[2] == true)
+if(parts[2] == "true")
 {
- alert("logged in!"); 
+    alert("logged in!"); 
 }
