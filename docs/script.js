@@ -11,20 +11,19 @@ function onRegister()
 document.cookie = document.getElementById('name').value
 + "#" + document.getElementById('password').value
 + "#" + "true";
-alert(document.cookie);
+alert("Successfully registered!");
 }
 
 function onCheck()
 {
 var enteredun = document.getElementById('name').value;
 var enteredpw = document.getElementById('password').value;
+var username = document.cookie.split("#").parts[0];
 var password = document.cookie.split("#").parts[1];
 
-if(password != enteredpw)
+if(password != enteredpw || username != enteredun)
 {
-alert(password);
-alert(enteredpw);
-alert("Wrong password.");
+alert("Wrong username / password.");
 }
 
 else
