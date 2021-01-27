@@ -11,7 +11,7 @@ document.getElementById('enteredusername').innerHTML = parts[0];
 function onRegister()
 {
 document.cookie = document.getElementById('name').value
-+ "#" + document.getElementById('password').value;
++ "#" + document.getElementById('password').value
 + "#" + "true";
 alert("Successfully registered!");
 }
