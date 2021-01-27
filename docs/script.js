@@ -1,6 +1,4 @@
-var test = document.cookie;
-
-var parts = test.split("#");
+var parts = document.cookie.split("#");
 
 if(parts[2] == "true")
 {
@@ -20,7 +18,7 @@ function onCheck()
 {
 var enteredun = document.getElementById('name').value;
 var enteredpw = document.getElementById('password').value;
-var password = parts[1];
+var password = document.cookie.split("#").parts[1];
 
 if(password != enteredpw)
 {
