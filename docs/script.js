@@ -13,7 +13,7 @@ function onRegister()
 document.cookie = document.getElementById('name').value
 + "#" + document.getElementById('password').value
 + "#" + "true";
-alert("Successfully registered!");
+alert(document.cookie);
 }
 
 function onCheck()
