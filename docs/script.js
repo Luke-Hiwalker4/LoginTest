@@ -18,8 +18,8 @@ function onCheck()
 {
 var enteredun = document.getElementById('name').value;
 var enteredpw = document.getElementById('password').value;
-var username = document.cookie.split("#").parts[0];
-var password = document.cookie.split("#").parts[1];
+var username = document.cookie.split("#")[0];
+var password = document.cookie.split("#")[1];
 
 if(password != enteredpw || username != enteredun)
 {
