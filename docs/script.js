@@ -1,6 +1,6 @@
 document.cookie = "Luke#Password#true";
 
-var parts = cookie.Split("#");
+var parts = document.cookie.split("#");
 
 alert(parts[0]);
 alert(parts[1]);
