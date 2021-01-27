@@ -2,7 +2,6 @@ var parts = document.cookie.split("#");
 
 if(parts[2] == "true")
 {
-alert(parts[2]);
 document.getElementById('enteredusername').innerHTML = parts[0];
 }
 
