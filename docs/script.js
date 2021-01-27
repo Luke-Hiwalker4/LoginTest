@@ -1,9 +1,34 @@
-document.cookie = "Luke#Password#true";
+var test = document.cookie;
 
-var parts = document.cookie.split("#");
+var parts = test.split("#");
 
 if(parts[2] == "true")
 {
-    document.getElementById('name').value = parts[0];
-    document.getElementById('password').value = parts[1];
+alert(parts[2]);
+document.getElementById('enteredusername').innerHTML = parts[0];
+}
+
+function onRegister()
+{
+document.cookie = document.getElementById('name').value
++ "#" + document.getElementById('password').value;
++ "#" + "true";
+alert("Successfully registered!");
+}
+
+function onCheck()
+{
+var enteredun = document.getElementById('name').value;
+var enteredpw = document.getElementById('password').value;
+var password = parts[1];
+
+if(password != enteredpw)
+{
+alert("Wrong password.");
+}
+
+else
+{
+alert("Successfully logged in!");
+}
 }
